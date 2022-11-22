@@ -55,6 +55,10 @@ io.on('connect' ,async (socket) => {
 
   })
 
+  app.get("/", (req, res) => {
+    res.send("<h1> Hello!!!</h1>");
+  });
+
 server.listen(port, () => {
     console.log(`Server running on port http://localhost:${port}/`);
   });
